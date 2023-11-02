@@ -1,0 +1,93 @@
+Introduction: Day 1
+Week : Introduction to Python Syntax 
+What is Python? 
+•	Python is a high-level, general-purpose, and interpreted programming language used in various sectors including machine learning, artificial intelligence, data analytics, web development, and many more. 
+•	Python is known for its ease of use, powerful standard library, and dynamic semantics. 
+•	It also has a large community of developers who keep on contributing towards its growth. The major focus behind creating it is making it easier for developers to read and understand, also reducing the lines of code.
+•	It also has a large community of developers who keep on contributing towards its 
+•	growth. The major focus behind creating it is making it easier for developers to read 
+•	and understand, also reducing the lines of code.
+•	COMMENTS
+•	Are added to make the code easier to understand.
+•	Comments in python start with #
+
+DAY 2:VARIABLES
+
+•	Variables=are containers for storing data values
+•	A variable is created the moment a value is assigned to it. Variables do not need to be declared with any type and can even change type once they have been set.
+•	If you want to specify the data type of a variable, this can be done with CASTING.
+•	Can get the data type of the variable by using the type() function.
+•	 Variables can be declared using Single or Double Quotes
+•	 Variables are Case-sensitive.
+•	 Variable names may contain any upper- or lower-case letter (A–Z, a–z), a number, or the underscore character. They may not begin with a number or contain spaces.
+
+ USING VARIABLES
+
+•	 Variables must be assigned to a data type, whether a string or integer
+•	A variable is automatically assigned to an appropriate data type.
+•	For example, Python automatically assigns a variable to a string datatype, if an input or value is given that contains letters or words.
+•	Type Casting in Python (Implicit and Explicit)
+•	Python Implicit Type Conversion
+•	 In this method, Python converts the datatype into another datatype automatically.
+•	It is possible to cast an integer to a floating-point without any data loss.
+•	For example. casting from an integer variable to a floating-point variable or casting from an integer variable to another integer variable
+•	An Explicit Type Conversion cannot automatically cast from one data type to another if it will result in data.
+•	For example, casting from a floating-point value to an integer value
+
+•	Data Types 
+
+•	Integers – These represent numbers in an unlimited range. This is only limited by a machine’s memory.
+
+•	Booleans – Evaluate to “True or False’, 1 or 0 respectively.
+
+•	Floating Point Numbers – Floating Point Numbers represent double-precision numbers.
+
+•	Complex Numbers – Complex Numbers represent numbers as a pair of double – precision numbers.
+
+•	String – A sequence of Unicode characters e.g a word or sentence that can be manipulated. 
+
+•	Operators In Python
+
+•	Operators in Python, operators are special symbols or keywords used to perform operations on variables and values. 
+
+•	Python supports a variety of operators, which can be categorized into different types based on the operations they perform.
+
+•	Arithmetic Operators:
+These operators are used to perform mathematical operations like addition, subtraction, multiplication, division, etc.
+
++ (Addition): Adds two operands.
+- (Subtraction): Subtracts the right operand from the left operand.
+* (Multiplication): Multiplies two operands.
+/ (Division): Divides the left operand by the right operand (results in a float).
+// (Floor Division): Divides the left operand by the right operand and rounds down to the nearest integer.
+% (Modulus): Returns the remainder of the division of the left operand by the right operand.
+** (Exponent): Raises the left operand to the power of the right operand.
+•	Comparison Operators:
+These operators are used to compare values. They return True or False based on the comparison.
+
+== (Equal to): True if both operands are equal.
+!= (Not equal to): True if operands are not equal.
+< (Less than): True if the left operand is less than the right operand.
+> (Greater than): True if the left operand is greater than the right operand.
+<= (Less than or equal to): True if the left operand is less than or equal to the right operand.
+>= (Greater than or equal to): True if the left operand is greater than or equal to the right operand.
+*Logical Operators:
+Logical operators are used to combine conditional statements.
+and: Returns True if both statements are true.
+or: Returns True if at least one statement is true.
+not: Returns True if the statement is false (complements the statement).
+
+•	Assignment Operators:
+Assignment operators are used to assign values to variables.
+
+= (Assignment): Assigns the value of the right operand to the left operand.
++= (Addition Assignment): Adds right operand to the left operand and assigns the result to the left operand.
+-= (Subtraction Assignment): Subtracts right operand from the left operand and assigns the result to the left operand.
+*= (Multiplication Assignment): Multiplies right operand with the left operand and assigns the result to the left operand.
+/= (Division Assignment): Divides left operand by the right operand and assigns the result to the left operand.
+//= (Floor Division Assignment): Performs floor division on the left operand with the right operand and assigns the result to the left operand.
+%= (Modulus Assignment): Computes the modulus of the left operand with the right operand and assigns the result to the left operand.
+**= (Exponent Assignment): Raises the left operand to the power of the right operand and assigns the result to the left operand. 
+
+
+
