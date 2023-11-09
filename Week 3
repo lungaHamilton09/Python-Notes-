@@ -1,0 +1,147 @@
+Introduction: Day 1
+Week 3: Data Structure 
+•	Data a way of organizing data so that it can be accessed more efficiently depending upon the situation.
+•	Data Structures are fundamentals of any programming language around which a program is built.
+•	A function definition introduces the function name in the current symbol table. The value of the function name has a type that is recognized by the interpreter as a user-defined function.
+•	This value can be assigned to another name which can then also be used as a function. 
+
+
+•	Comprehension List in Python
+•	List Comprehensions are a third way of making lists.
+•	They provide a concise way to create lists. 
+•	Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable , or to create a subsequence of those elements that satisfy a certain condition.
+•	List Comprehensions are a third way of making lists. With this kind of approach, one can rewrite the ‘for’ loop from the first example in just a single line of code.
+•	Example:
+•	>>> squares = [i * i for i in range(10)]
+•	>>> squares
+•	[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+ 
+•	The Del Statement/ Tuples and Sequences in Python
+•	In Python, the del statement is used to remove an item or a slice from a list, or to delete a variable. It can also be used to delete entire variables or objects.
+•	Here's how you can use the del statement with tuples and sequences:
+•	Deleting Items from a List:
+•	my_list = [1, 2, 3, 4, 5]
+•	del my_list[2]  # Deletes the item at index 2 (third element) in the list
+•	print(my_list)  # Output: [1, 2, 4, 5]
+•	
+•	# Deleting a slice from the list
+•	del my_list[1:3]  # Deletes items from index 1 to 2 (exclusive) in the list
+•	print(my_list)  # Output: [1, 5]
+•	Deleting Variables:
+•	my_variable = 10
+•	del my_variable  # Deletes the variable my_variable
+•	# Trying to access my_variable after deletion will raise a NameError
+•	Deleting Items from a Tuple:
+•	Tuples in Python are immutable, which means their elements cannot be changed or deleted after the tuple is created. However, you can delete the entire tuple using the del statement.
+•	my_tuple = (1, 2, 3, 4, 5)
+•	del my_tuple  # Deletes the entire tuple
+•	# Trying to access my_tuple after deletion will raise a NameError
+•	Deleting Items from Other Sequences:
+•	my_string = "hello"
+•	# Deleting a character from the string
+•	my_string_list = list(my_string)
+•	del my_string_list[1]  # Deletes the character at index 1 in the list
+•	my_string = ''.join(my_string_list)  # Converts the list back to a string: "helo"
+•	print(my_string)
+
+•	Set in Python
+•	A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries.
+•	Set objects also support mathematical operations like union, intersection, difference and symmetric difference.
+•	Curly braces or the set() function can be used to create sets. Note: to create an empty set you have to use set(), not {}; the latter creates an empty dictionary, a data structure that we discuss in the next section.
+•	Example:
+>>>  
+
+>>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'} 
+
+>>> print(basket)                   # show that duplicates have been removed 
+
+{'orange', 'banana', 'pear', 'apple'} 
+
+>>> 'orange' in basket              # fast membership testing 
+
+True 
+
+>>> 'crabgrass' in basket 
+
+False  
+
+>>> # Demonstrate set operations on unique letters from two words 
+
+...
+
+>>> a = set('abracadabra') 
+
+>>> b = set('alacazam') 
+
+>>> a                               # unique letters in a 
+
+{'a', 'r', 'b', 'c', 'd'} 
+
+>>> a - b                           # letters in a but not in b 
+
+{'r', 'd', 'b'} 
+
+>>> a | b                           # letters in a or b or both 
+
+{'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'} 
+
+>>> a & b                           # letters in both a and b 
+
+{'a', 'c'} 
+
+    >>> a ^ b                           # letters in a or b but not both 
+
+    {'r', 'd', 'b', 'm', 'z', 'l'} 
+
+Similarly to list comprehensions, set comprehensions are also supported:  
+
+>>>  
+
+>>> a = {x for x in 'abracadabra' if x not in 'abc'} 
+
+>>> a 
+
+{'r', 'd'}
+
+•	Dictionaries in Python 
+•	
+•	Dictionaries in Python are like sets of key-value pairs. Keys must be unique and can be any immutable type, like strings or numbers. Tuples can also be keys if they only contain strings, numbers, or other tuples without mutable objects. Lists cannot be keys because they can be modified. Dictionaries are created using braces {} with key-value pairs inside. You can store, retrieve, and delete values using keys. If you use an existing key to store a new value, the old value is replaced. Using a non-existent key will result in an error.
+•	Looping Techniques
+•	Looping Techniques in Python provide different ways to iterate through data structures like lists, tuples, dictionaries, and strings.
+
+
+•	Conditions( with “while and if” statements)
+•	The Conditions used in while and if statements can contain any operators, not just comparison.
+•	The comparison operators in and not in check whether a value occurs (does not occur) in a sequence. The operators are and is not compare whether two objects are really the same object; this only matters for mutable objects like lists. All comparison operators have the same priority, which is lower than that of all numerical operators.
+•	Comparisons can be chained. For example, a<b == c tests whether a is less than b and moreover b equals c.
+•	Comparison may be combined using the Boolean operators and and or, and the outcome of a comparison (or of any other Boolean expression) may be negated with not. These have lower priorities than comparison operators; between them, not has the highest priority and or the lowest, so that A and not B or C is equivalent to (A and (not B)) or C. As always, parentheses can be used to express the desired composition.
+•	The Boolean operators and and or are so-called short-circuit operators: their arguments are evaluated from left to right, and evaluation stops as soon as the outcome is determined. For example, if A and C are true but B is false, A and B and C does not evaluate the expression C. When used as a general value and not as a Boolean, the return value of a short-circuit operator is the last evaluated argument.
+•	Sequence objects may be compared to other objects with the same sequence type. The comparison uses lexicographical ordering: first the first two items are compared, and if they differ this determines the outcome of the comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted.  
+
+•	If two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried out recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence is an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one.  
+
+•	Lexicographical ordering for strings uses the Unicode code point number to order individual characters.
+
+•	Python List
+
+•	In Python programming, a list is created by placing all the items (elements) inside square brackets [], separated by commas.
+•	It can have any number of items and they may be of different types (integer, float, string etc.).
+
+
+•	Errors and Exceptions
+•	Errors and exceptions are mechanisms used to handle unexpected situations that may occur during program execution. Errors are issues in the code that prevent it from running, while exceptions are raised during program execution when an error occurs.
+•	 Syntax Errors:
+•	Syntax errors, also known as parsing errors, occur when the code does not follow the correct syntax of the Python language.
+•	Example: 
+•	print("Hello, World"  # Missing closing parenthesis
+•	Exceptions:
+•	Exceptions are runtime errors that occur during the execution of a program. Common exceptions include ZeroDivisionError, TypeError, NameError, IndexError, and FileNotFoundError.
+•	Example:
+•	try:
+•	    result = 10 / 0  # ZeroDivisionError: division by zero
+•	except ZeroDivisionError as e:
+•	    print(f"Error: {e}")
+
+•	Python Classes
+
+•	Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.
